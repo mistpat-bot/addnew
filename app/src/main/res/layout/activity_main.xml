@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="選擇地址文字顏色"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <RadioButton android:id="@+id/rbGreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="螢光綠 (推薦導航)" android:checked="true" />
+        <RadioButton android:id="@+id/rbWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="經典白" />
+        <RadioButton android:id="@+id/rbYellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="鮮亮黃" />
+        <RadioButton android:id="@+id/rbCyan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天藍色" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="開啟透明地址懸浮窗" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="關閉懸浮窗" />
+</LinearLayout>
