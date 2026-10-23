@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="啟動浮水印服務" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止服務"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="設定浮水印顏色"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+        <Button android:id="@+id/btn_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="白色"/>
+        <Button android:id="@+id/btn_color_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="黃色"/>
+        <Button android:id="@+id/btn_color_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="紅色"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="旋轉方向 (+90°)" />
+</LinearLayout>
